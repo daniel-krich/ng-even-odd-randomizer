@@ -1,0 +1,6 @@
+<div class="container">
+    <button class="btn btn-dark" (click)="this.generateNum()">
+        <span *ngIf="!this.emittedMessage">Generate random number and emit event</span>
+        <span *ngIf="this.emittedMessage">Please wait a few moments...</span>
+    </button>
+</div>
